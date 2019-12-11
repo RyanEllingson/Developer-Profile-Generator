@@ -89,21 +89,21 @@ inquirer
                 <div class="container">
                     <div class="row my-5">
                         <div class="col-12">
-                            <div class="card text-center" style="background-color: ${color}; color: white;">
+                            <div class="card text-center">
                                 <img src="${picUrl}" class="card-img-top mx-auto rounded-circle border border-warning" alt="Profile picture" style="width: 18rem;">
                                 <div class="card-body">
                                     <p class="card-text" style="font-size: 36px;">${username}</p>
                                     <p class="card-text" style="font-size: 24px;">${bio}</p>
-                                    <a class="card-link" style="color: white;" href="https://google.com/maps/place/${modLocation}">${location}</a>
-                                    <a class="card-link" style="color: white;" href="${gitHubUrl}">GitHub</a>
-                                    <a class="card-link" style="color: white;" href="${blog}">Blog</a>
+                                    <a class="card-link" href="https://google.com/maps/place/${modLocation}">${location}</a>
+                                    <a class="card-link" href="${gitHubUrl}">GitHub</a>
+                                    <a class="card-link" href="${blog}">Blog</a>
                                 </div>
                               </div>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-6">
-                            <div class="card text-center" style="background-color: ${color}; color: white;">
+                            <div class="card text-center">
                                 <div class="card-body">
                                     <p class="card-text" style="font-size: 24px;">Public Repositories</p>
                                     <p class="card-text" style="font-size: 20px;">${numRepos}</p>
@@ -111,7 +111,7 @@ inquirer
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="card text-center" style="background-color: ${color}; color: white;">
+                            <div class="card text-center">
                                 <div class="card-body">
                                     <p class="card-text" style="font-size: 24px;">Followers</p>
                                     <p class="card-text" style="font-size: 20px;">${numFollowers}</p>
@@ -121,7 +121,7 @@ inquirer
                     </div>
                     <div class="row mb-3">
                         <div class="col-6">
-                            <div class="card text-center" style="background-color: ${color}; color: white;">
+                            <div class="card text-center">
                                 <div class="card-body">
                                     <p class="card-text" style="font-size: 24px;">GitHub Stars</p>
                                     <p class="card-text" style="font-size: 20px;">${numStarred}</p>
@@ -129,7 +129,7 @@ inquirer
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="card text-center" style="background-color: ${color}; color: white;">
+                            <div class="card text-center">
                                 <div class="card-body">
                                     <p class="card-text" style="font-size: 24px;">Following</p>
                                     <p class="card-text" style="font-size: 20px;">${numFollowing}</p>
@@ -138,6 +138,22 @@ inquirer
                         </div>
                     </div>
                 </div>
+
+                <style type="text/css">
+                    body {
+                    background-color: white;
+                    -webkit-print-color-adjust: exact !important;
+                    }
+
+                    .card {
+                        background-color: ${color};
+                        color: white;
+                    }
+
+                    .card-link {
+                        color: white;
+                    }
+                </style>
             </body>
             </html>`;
 
