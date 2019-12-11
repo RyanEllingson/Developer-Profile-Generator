@@ -9,10 +9,13 @@ The Developer Profile Generator uses Inquirer to prompt the user for a GitHub us
 One thing to note is that the app will not work if there is already an "index.pdf" file in the directory where the repo was cloned.  You must first either delete or rename the PDF and then you can run the app again.
 
 Below is a screenshot showing an example user input in the terminal:
+![User input in terminal](https://github.com/RyanEllingson/Developer-Profile-Generator/blob/master/assets/images/terminal-screenshot.JPG)
 
 Below is a screenshot showing the "index.pdf" file being generated:
+![index.pdf file generated](https://github.com/RyanEllingson/Developer-Profile-Generator/blob/master/assets/images/directory-screenshot.JPG)
 
 And below is a screenshot of the generated PDF:
+![example pdf screenshot](https://github.com/RyanEllingson/Developer-Profile-Generator/blob/master/assets/images/pdf-screenshot.JPG)
 
 This actual PDF is included in the repo for reference and is titled "example.pdf."
 
